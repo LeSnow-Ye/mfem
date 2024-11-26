@@ -3381,6 +3381,8 @@ public:
 
    const IntegrationRule &GetRule(int order, FaceElementTransformations &T);
 
+   real_t GetPenaltyParameter() const { return kappa; }
+
 private:
    void SetupPA(const FiniteElementSpace &fes, FaceType type);
 };
